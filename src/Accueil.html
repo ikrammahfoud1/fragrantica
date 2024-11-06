@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parfumerie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+       
+       
+       
+       
+         img.active {
+            opacity: 1; /* Affiche l'image active */
+        }
+
+       
+
+    </style>
+</head>
+<body class="bg-white font-[Poppins] " >
+    <div id="header"></div>
+
+
+<!-- Section Slider -->
+<div class="flex justify-center items-center mt-16">
+    <button id="prev" class="bg-white text-black p-2 rounded-full">❮</button>
+
+    <div class="relative w-full sm:w-2/3 md:w-1/2 overflow-hidden h-96">
+        <div class="absolute top-0 left-0 w-full h-full flex justify-center items-center" id="slider">
+            <img src="../images/slider1.png" alt="Image 1" class="object-contain active w-auto h-auto max-w-full absolute top-0 left-0 w-full h-full opacity-0" />
+            <img src="../images/slider2.png" alt="Image 2" class="object-contain w-auto h-auto max-w-full absolute top-0 left-0 w-full h-full opacity-0" />
+            <img src="../images/slider3.png" alt="Image 3" class="object-contain w-auto h-auto max-w-full absolute top-0 left-0 w-full h-full opacity-0"  />
+        </div>
+    </div>
+    <button id="next" class="bg-white text-black p-2 rounded-full">❯</button>
+
+
+</div>
+<div class="text-center mt-20 px-4">
+    <h1 class="text-[#ffa5a8] text-2xl md:text-3xl lg:text-4xl font-semibold">
+        Le parfum, un art invisible qui capture des émotions et éternise les souvenirs...
+    </h1>
+</div>
+
+<!-- Section Meilleures Ventes avec 9 Parfums -->
+<div class="bg-white mt-16 mx-auto max-w-7xl rounded-3xl p-10 shadow-lg  ">
+    <div class="flex justify-between items-center flex-col sm:flex-row ">
+        <h2 class="text-[#ffa5a8] text-3xl font-bold ">Meilleures ventes</h2>
+        <button class="bg-[#ffa5a8] text-white text-2xl font-bold py-2 px-20 rounded-lg pipis">Tout afficher</button>
+
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Carte Produit 1 -->
+        <div class="bg-white/10 rounded-xl shadow-lg  p-6 flex justify-center items-center w-full h-full flex-col">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDP6ZCGM7NtaidPDsTm1YppzZA_yq3PgGCjg&s"   alt="J'adore" class="rounded-xl mb-6 h-64 w-auto" />
+            <img src="../images/stars.png"   alt="etoiles" class="w-48 h-auto" />
+
+            <button class="bg-[#ff6469] text-white py-2 px-4 rounded-lg w-full jadore">J’adore Christian Dior</button>
+        </div>
+        <!-- Carte Produit 2 -->
+        <div class="bg-white/10 rounded-xl shadow-lg  p-6 flex justify-center items-center w-full h-full flex-col">
+
+            <img src="https://fraguru.com/mdimg/perfume/375x500.28711.jpg" alt="J'adore" class="rounded-xl mb-6 h-64 w-auto" />
+            <img src="../images/stars.png"   alt="etoiles" class="w-48 h-auto" />
+
+            <button class="bg-[#ff6469] text-white py-2 px-4 rounded-lg w-full jadore ">CHANEL N°5</button>
+        </div>
+        <!-- Carte Produit 3 -->
+        <div class="bg-white/10 rounded-xl shadow-lg  p-6 flex justify-center items-center w-full h-full flex-col">
+            <img src="https://images.bloomingdalesassets.com/is/image/BLM/products/7/optimized/12516487_fpx.tif?op_sharpen=1&wid=700&fit=fit,1&fmt=webp" alt="J'adore" class="rounded-xl mb-6 h-64 w-auto" />
+            <img src="../images/stars.png"   alt="etoiles" class="w-48 h-auto" />
+
+            <button class="bg-[#ff6469] text-white py-2 px-4 rounded-lg w-full">Coco CHANEL</button>
+        </div>
+        <!-- Carte Produit 4 -->
+        <div class="bg-white/10 rounded-xl shadow-lg  p-6 flex justify-center items-center w-full h-full flex-col">
+
+            <img src="https://kosmenia.ma/cdn/shop/products/lancome-la-vie-est-belle-eau-de-parfum-f_1024x1024@2x.jpg?v=1605437023" alt="J'adore" class="rounded-xl mb-6 h-64 w-auto" />
+            <img src="../images/stars.png"   alt="etoiles" class="w-48 h-auto" />
+            <button class="bg-[#ff6469] text-white py-2 px-4 rounded-lg w-full">Lancôme La Vie Est Belle</button>
+        </div>
+        <!-- Carte Produit 5 -->
+        <div class="bg-white/10 rounded-xl shadow-lg  p-6 flex justify-center items-center w-full h-full flex-col">
+            <img src="../images/blackopium.jpg" alt="J'adore" class="rounded-xl mb-6 h-64 w-auto" />
+            <img src="../images/stars.png"   alt="etoiles" class="w-48 h-auto" />
+
+            <button class="bg-[#ff6469] text-white py-2 px-4 rounded-lg w-full">YSL Black Opium</button>
+        </div>
+        <!-- Carte Produit 6 -->
+        <div class="bg-white/10 rounded-xl shadow-lg  p-6 flex justify-center items-center w-full h-full flex-col">
+            <img src="https://kosmenia.ma/cdn/shop/products/MissDioreaudeparfum_1024x1024@2x.jpg?v=1591551091" alt="J'adore" class="rounded-xl mb-6 h-64 w-auto" />
+            <img src="../images/stars.png"   alt="etoiles" class="w-48 h-auto" />
+
+            <button class="bg-[#ff6469] text-white py-2 px-4 rounded-lg w-full">Dior Miss</button>
+        </div>
+        <!-- Carte Produit 7 -->
+        <div class="bg-white/10 rounded-xl shadow-lg  p-6 flex justify-center items-center w-full h-full flex-col">
+            <img src="https://i5.walmartimages.com/seo/Versace-Eros-6-7-oz-Eau-De-Toilette-Spray-for-Men_df8de36d-29cb-4a2f-8a96-5bedc4a6b423_1.a87da11fb4b40fb48aa84423c2507b29.jpeg" alt="J'adore" class="rounded-xl mb-6 h-64 w-auto" />
+            <img src="../images/stars.png"   alt="etoiles" class="w-48 h-auto" />
+
+            <button class="bg-[#ff6469] text-white py-2 px-4 rounded-lg w-full">Versace Eros</button>
+        </div>
+        <!-- Carte Produit 8 -->
+        <div class="bg-white/10 rounded-xl shadow-lg  p-6 flex justify-center items-center w-full h-full flex-col">
+            <img src="../images/guccibloom.jpg" alt="J'adore" class="rounded-xl mb-6 h-64 w-auto" />
+            <img src="../images/stars.png"   alt="etoiles" class="w-48 h-auto" />
+
+            <button class="bg-[#ff6469] text-white py-2 px-4 rounded-lg w-full">Gucci Bloom</button>
+        </div>
+        <!-- Carte Produit 9 -->
+        <div class="bg-white/10 rounded-xl shadow-lg  p-6 flex justify-center items-center w-full h-full flex-col">
+            <img src="https://marionnaud.ma/cdn/shop/products/Capture_d_ecran_2022-02-22_a_17.33.45_1800x1800.png?v=1645547631" alt="J'adore" class="rounded-xl mb-6 h-64 w-auto" />
+            <img src="../images/stars.png"   alt="etoiles" class="w-48 h-auto" />
+
+            <button class="bg-[#ff6469] text-white py-2 px-4 rounded-lg w-full">Tom Ford Noir</button>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Section Footer -->
+    <div id="footer"></div>
+
+    <script src="includes.js"></script>
+
+<script>
+    
+    const slider = document.getElementById('slider');
+    const images = slider.children;
+    let index = 0;
+
+    // Initialiser la première image visible
+    updateSlider();
+
+    document.getElementById('next').addEventListener('click', () => {
+        index = (index + 1) % images.length;
+        updateSlider();
+    });
+
+    document.getElementById('prev').addEventListener('click', () => {
+        index = (index - 1 + images.length) % images.length;
+        updateSlider();
+    });
+
+    function updateSlider() {
+        for (let i = 0; i < images.length; i++) {
+            images[i].classList.remove('active'); // Retirer la classe active de toutes les images
+        }
+        images[index].classList.add('active'); // Ajouter la classe active à l'image actuelle
+    }
+    function scrollToDiv() {
+
+        const targetDiv = document.getElementById("propos");
+
+        targetDiv.scrollIntoView({ behavior: "smooth" });
+    }
+</script>
+
+</body>
+</html>

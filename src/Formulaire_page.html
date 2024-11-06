@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulaire de Parfum </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white font-[Poppins] " >
+    <div id="header"></div>
+
+<!-- Section principale de formulaire -->
+<div class="flex justify-center items-center h-full">
+    <fieldset class="border border-black rounded-lg shadow-lg p-4 m-4 w-full lg:w-[800px] bg-transparent">
+        <legend class="text-xl font-semibold text-center text-[#EB3BB3] font-medium font-['Poppins'] flex items-center justify-center">
+            Formulaire pour générer le parfum adéquat à ton mood !
+            <img class="w-12 h-12 ml-2" src="../images/image 12 (1).png" alt="Image" />
+        </legend>
+        <form class="flex flex-col items-center space-y-4">
+            <div class="flex items-start md:items-center w-full flex-col md:flex-row">
+                <label class="block text-black font-Poppins w-40 md:w-52">Intensité :</label>
+                <div class="relative w-64 md:w-80">
+                    <select class="w-full h-10 mt-1 p-2 bg-[#c4c4c4]/40 rounded-[20px] border border-transparent focus:border-gray-400 focus:outline-none">
+                        <option value="" disabled selected> </option>
+                        <option value="faible">Faible</option>
+                        <option value="moyenne">Moyenne</option>
+                        <option value="élevée">Élevée</option>
+                    </select>
+                    <span class="absolute right-2 top-2 pointer-events-none">▼</span> <!-- Flèche personnalisée -->
+                </div>
+            </div>
+            <div class="flex items-start md:items-center w-full flex-col md:flex-row">
+                <label class="block text-black font-Poppins w-40 md:w-52">Type de fragrance :</label>
+                <div class="relative w-64 md:w-80">
+                    <select class="w-full h-10 mt-1 p-2 bg-[#c4c4c4]/40 rounded-[20px] border border-transparent focus:border-gray-400 focus:outline-none">
+                        <option value="" disabled selected> </option>
+                        <option value="floral">Floral</option>
+                        <option value="fruité">Fruité</option>
+                        <option value="oriental">oriental</option>
+                    </select>
+                    <span class="absolute right-2 top-2 pointer-events-none">▼</span> <!-- Flèche personnalisée -->
+                </div>
+            </div>
+            <div class="flex items-start md:items-center w-full flex-col md:flex-row">
+                <label class="block text-black font-Poppins w-40 md:w-52">Occasion :</label>
+                <div class="relative w-64 md:w-80">
+                    <select class="w-64 md:w-80 h-10 mt-1 p-2 bg-[#c4c4c4]/40 rounded-[20px] border border-transparent focus:border-gray-400 focus:outline-none">
+                        <option value="" disabled selected> </option>
+                        <option value="quotidien">Quotidien</option>
+                        <option value="soirée">Soirée</option>
+                        <option value="formel">Formel</option>
+                    </select>
+                    <span class="absolute right-2 top-2 pointer-events-none">▼</span> <!-- Flèche personnalisée -->
+                </div>
+            </div>
+            <div class="flex items-start md:items-center w-full flex-col md:flex-row">
+                <label class="block text-black font-Poppins w-40 md:w-52">Mood :</label>
+                <div class="relative w-64 md:w-80">
+                    <select class="custom-select w-64 md:w-80 h-10 mt-1 p-2 bg-[#c4c4c4]/40 rounded-[20px] focus:border-gray-400 focus:outline-none">
+                        <option value="" disabled selected></option>
+                        <option value="joyeux">Joyeux</option>
+                        <option value="relaxant">Relaxant</option>
+                        <option value="énergisant">Énergisant</option>
+                    </select>
+                    <span class="absolute right-2 top-2 pointer-events-none">▼</span> <!-- Flèche personnalisée -->
+                </div>
+            </div>
+            <div class="flex items-start md:items-center w-full flex-col md:flex-row">
+                <label class="block text-black font-Poppins w-40 md:w-52">Âge :</label>
+                <input type="number" class="w-64 md:w-80 h-10 mt-1 p-2 bg-[#c4c4c4]/40 rounded-[20px] border border-transparent focus:border-gray-400 focus:outline-none" placeholder="entrer votre âge">
+            </div>
+            <div class="flex items-start md:items-center w-full flex-col md:flex-row">
+                <label class="block text-black font-Poppins w-40 md:w-52">Budget :</label>
+                <input type="number" class="w-64 md:w-80 h-10 mt-1 p-2 bg-[#c4c4c4]/40 rounded-[20px] border border-transparent focus:border-gray-400 focus:outline-none" placeholder="entrer votre budget">
+            </div>
+        
+            <div class="flex items-center w-full justify-center">
+                <button class="w-2/3 md:w-1/2 h-12 mt-6 bg-[#FF6469]/60 text-white font-Poppins text-xl rounded-2xl hover:bg-[#e55a65] transition duration-200 whitespace-nowrap">
+                    Génère ton parfum !
+                </button>
+            </div>
+        </form>
+    </fieldset>
+</div>
+
+
+<!-- Section de texte -->
+<div class="flex justify-center items-center h-1/2 ">
+    <div class="p-6 w-full lg:w-[1000px] text-center text-black text-[22px] font-medium font-['Poppins'] leading-[1.5] tracking-widest">
+        Créez un parfum sur mesure selon votre humeur ! Sélectionnez votre mood, répondez 
+        à quelques questions, et découvrez une fragrance unique qui vous correspond parfaitement.
+    </div>
+</div>
+
+
+<!-- Section de Photo -->
+<div class="w-full overflow-hidden my-4 mt-20 mb-20">
+    <img src="../images/image 18.png" alt="Image plein écran" class="w-full h-600> object-cover"> 
+</div>
+
+<!-- Section de logo -->
+<div class="flex items-center my-4 mb-10">
+    <div class="flex-1 border-t border-[#EB3BB3] shadow-md mr-2 "></div> <!-- Ligne gauche -->
+    <div class="text-center text-5xl text-pink-400 font-light -mt-4"><img src="../images/WhatsApp Image 2024-10-22 at 18.59.56.jpeg" alt=" Logo"></div> <!-- Ajuster la marge supérieure -->
+    <div class="flex-1 border-t  border-[#EB3BB3] shadow-md ml-2"></div> <!-- Ligne droite -->
+</div>
+
+
+
+<!-- Section Footer -->
+<div id="footer"></div>
+
+<style>
+    select {
+    appearance: none;
+
+    background-size: 12px;
+    padding-right: 30px; 
+    }
+</style>
+
+<script src="includes.js"></script>
+
+
+</body>
+</html>
